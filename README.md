@@ -1,2 +1,6 @@
 # Twitter Sentiment Research by Ali Saeed 
-As an intern for Accentedge in 1871 Chicago, I studied the correlation between Twitter sentiment about a company and the company's stock price returns.
+In the summer of 2018, I interned at accentedge, a startup located at the 1871 tech incubator in Chicago. I studied the correlation between Twitter sentiment about a company and the company's stock price returns. 
+
+The data-processing notebook contains the Python code used to format the scraped Tweets, assess their sentiment polarity using TextBlob, access historical stock closing prices using the IEX Finance API, and export the compiled training data as Numpy arrays for SageMaker. The sagemakerML notebook is a download of the SageMaker-hosted Jupytner notebook I used to communicate with its Linear Learner API. This is where I trained and deployed the model for predictions. The first 75% of my data was used for training, and the final 25% for evaluating the accuracy of the model. The accuracy of the model was evaluated and visualized using Matplotlib at the end of the data-processing notebook.
+
+The PowerPoint presentation includes a more detailed walkthrough of my methodology and results. Unforunately, I am unable to upload the mined Tweets themselves to GitHub, as they are far too large (gigabytes!). However, if you would like more clarifaction, or a demo of my code, feel free to contact me.
